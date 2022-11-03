@@ -1,0 +1,105 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+header{
+  height:50px;
+  background-color:#ff9a4b;
+}
+
+main{
+  width:960px;
+  margin:50px auto;
+  display:flex;
+  justify-content:center;
+}
+
+.step-box{
+  position:relative;
+  width:300px;
+  background-color:#eeeeee;
+  margin-right:30px;
+  padding:10px;
+}
+
+.step-box:nth-child(3){
+  margin-right:0;
+}
+
+.step-num{
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:#ff9a4b;
+  color:#ffffff;
+}
+
+.image-1{
+  width:280px;
+  height:150px;
+  background-image:url(img/flow01.png);
+  background-size:cover;
+  background-position:bottom;
+}
+
+.image-2{
+  width:280px;
+  height:150px;
+  background-image:url(img/flow02.png);
+  background-size:cover;
+  background-position:bottom;
+}
+
+.image-3{
+  width:280px;
+  height:150px;
+  background-image:url(img/flow03.png);
+  background-size:cover;
+  background-position:bottom;
+}
+
+.title{
+  margin-top:15px;
+  margin-bottom:5px;
+}
+
+.text{
+
+}
+
+footer{
+  height:50px;
+  background-color:#aaaaaa;
+}
+
+@media screen and (max-width:768px) {
+  main{
+    width:100%;
+    display:block;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .step-box{
+    width:90%;
+    margin:0 auto;
+    margin-bottom:20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .step-box:nth-child(3){
+    margin:0 auto;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .image-1,
+  .image-2,
+  .image-3{
+    width:100%;
+    background-position:center;
+  }
+}
